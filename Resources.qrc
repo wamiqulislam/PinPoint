@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/images"/>
+    <qresource prefix="/image"/>
+    <qresource lang="English" prefix="/images"/>
+    <qresource lang="english" prefix="/images"/>
+    <qresource lang="spanish" prefix="/images"/>
+    <qresource lang="English" prefix="/music"/>
+    <qresource prefix="/">
+        <file>Graphics/Pakistan map.jpg</file>
+        <file>Music/Sweden-C418.mp3</file>
+        <file>Music/Cat-C418.mp3</file>
+        <file>Graphics/wood1.jpg</file>
+        <file>Graphics/bluepattern.jpg</file>
+        <file>Graphics/bluepattern2.jpg</file>
+        <file>Graphics/oldmap.jpg</file>
+        <file>Graphics/oldmap.png</file>
+        <file>Graphics/title.png</file>
+        <file>Graphics/compassmap.png</file>
+        <file>Graphics/optionstitle.png</file>
+        <file>Graphics/optionsorange.png</file>
+        <file>Music/PeppaPig.mp3</file>
+        <file>Music/Erika.mp3</file>
+        <file>Music/Aria_math-C418.mp3</file>
+    </qresource>
+</RCC>

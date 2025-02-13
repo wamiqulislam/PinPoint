@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OptionsWindow</class>
+ <widget class="QMainWindow" name="OptionsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>568</width>
+    <height>613</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Options</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QSlider{
+color: black;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="close">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>470</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #e6c41c; 
+  border: 2px solid #a38802;
+}
+QPushButton:pressed {
+    background-color:#c7a20c; 
+    border: 2px solid #997603;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>551</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Volume</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="volumeslider">
+       <property name="styleSheet">
+        <string notr="true">QSlider{
+background: gray;
+	color: white;
+    background-color: gray;
+    border: 2px solid rgb(102, 102, 102);
+    border-radius: 5px;
+}
+
+QSlider::handle{
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}</string>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="volumepercentage">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}</string>
+       </property>
+       <property name="text">
+        <string>50%</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>568</width>
+      <height>613</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources.qrc">:/Graphics/compassmap.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>231</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources.qrc">:/Graphics/optionsorange.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mute">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox{
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Mute</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="audio1">
+    <property name="geometry">
+     <rect>
+      <x>127</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #e6c41c; 
+  border: 2px solid #a38802;
+}
+QPushButton:pressed {
+    background-color:#c7a20c; 
+    border: 2px solid #997603;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Audio 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="audio2">
+    <property name="geometry">
+     <rect>
+      <x>238</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #e6c41c; 
+  border: 2px solid #a38802;
+}
+QPushButton:pressed {
+    background-color:#c7a20c; 
+    border: 2px solid #997603;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Audio 2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="audio3">
+    <property name="geometry">
+     <rect>
+      <x>349</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #e6c41c; 
+  border: 2px solid #a38802;
+}
+QPushButton:pressed {
+    background-color:#c7a20c; 
+    border: 2px solid #997603;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Audio 3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="audio4">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #e6c41c; 
+  border: 2px solid #a38802;
+}
+QPushButton:pressed {
+    background-color:#c7a20c; 
+    border: 2px solid #997603;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Audio 4</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="hard">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>360</y>
+      <width>108</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox{
+	color: white;
+    background-color: #d9990f;
+    border: 2px solid #a36b02;
+    border-radius: 5px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Hard Mode</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>close</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>label_3</zorder>
+   <zorder>mute</zorder>
+   <zorder>audio1</zorder>
+   <zorder>audio2</zorder>
+   <zorder>audio3</zorder>
+   <zorder>audio4</zorder>
+   <zorder>hard</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>568</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
